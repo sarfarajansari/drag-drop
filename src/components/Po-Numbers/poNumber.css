@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.PoNumber{
+    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    margin:0;
+    padding:0.1em 0.3em;
+    padding-left: calc(0.3em + 10px);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(162, 162, 214);
+    font-weight:500;
+    cursor:move;
+    user-select: none;
+    position: relative;
+}
+.PoNumber:hover{
+    background-color:#f6f7fa
+}
+
+.PoNumber>span{
+    text-align: right;
+    float: right;
+    display:none;
+    cursor: pointer;
+}
+
+.PoNumber:hover>span{
+    display:block;
+}
+
+
+

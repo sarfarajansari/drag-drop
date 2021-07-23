@@ -1,0 +1,103 @@
+.wheel-container-parent{
+    padding:0.5rem 0;
+}
+.wheel-container-parent:hover{
+    background-color: hsl(227, 36%, 95%);
+}
+.wheel-container-parent:hover>.wheel-container{
+    border: 2px solid hsl(0, 3%, 70%);
+}
+
+.wheel-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height:4rem;
+    border: 2px solid hsl(0, 9%, 94%);
+    margin: 0 1rem;
+    border-collapse: collapse;
+}
+.wheel-container:hover>div{
+    border: 1px solid hsl(0, 7%, 89%);
+    border-collapse: collapse;
+}
+.wheel-container>div.active{
+    border: 1px solid hsl(0, 7%, 89%);
+    border-collapse: collapse;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.wheel-container>div.active.red{
+    background-color: rgb(255, 133, 133);
+}
+.wheel-container>div.active.blue{
+    background-color: rgb(17, 120, 216);
+}
+.wheel-container>div.active.green{
+    background-color: rgb(70, 165, 70);
+}
+
+
+    
+.wheel-container>.div1 { grid-area: 3 / 1 / 5 / 2; }
+.wheel-container>.div2 { grid-area: 3 / 2 / 5 / 3; }
+.wheel-container>.div3 { grid-area: 3 / 3 / 5 / 5; }
+.wheel-container>.div4 { grid-area: 3 / 5 / 5 / 7; }
+.wheel-container>.div5 { grid-area: 1 / 1 / 3 / 2; }
+.wheel-container>.div6 { grid-area: 1 / 2 / 3 / 3; }
+.wheel-container>.div7 { grid-area: 2 / 3 / 3 / 4; }
+.wheel-container>.div8 { grid-area: 2 / 4 / 3 / 5; }
+.wheel-container>.div9 { grid-area: 2 / 5 / 3 / 6; }
+.wheel-container>.div10 { grid-area: 2 / 6 / 3 / 7; }
+
+
+
+
+.wheel {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    }
+    
+.wheel>.div1 { grid-area: 1 / 3 / 2 / 4; }
+.wheel>.div2 { grid-area: 1 / 6 / 2 / 7; }
+.wheel>.div3 { grid-area: 1 / 7 / 2 / 8; }
+
+
+.wheel svg{
+    font-size: clamp(1.3rem,1.4vw,1.5rem);
+    fill: rgb(215, 212, 226);
+}
+
+
+.config-btns-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.config-btns-container button{
+    outline:none;
+    border: none;
+    margin: 0 0.2rem 0.1rem 0.2rem;
+    background-color: rgb(233, 233, 248);
+    color: blue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 580;
+}
+.config-btns-container button span{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.config-btns-container button:hover{
+    background-color:blue;
+    color: white;
+}
+
+.config-btns-container-parent{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    height: 5rem;
+}

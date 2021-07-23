@@ -1,0 +1,23 @@
+.btn{
+    outline: none;
+    margin:0.5rem 1rem;
+    padding:0.5em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius:5px;
+    font-size:clamp(1rem,1.2vw,1.2rem)
+}
+
+
+.btn.secondary:hover{
+    background-color:rgb(211, 211, 211)
+}
+
+.btn.primary{
+    background-color: rgb(60, 60, 240);
+    color: white;
+}
+
+.btn.primary:hover{
+    background-color: rgb(0, 0, 204);  
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+.detail>p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-weight: 700;
+    color:rgb(64, 64, 75);
+    margin: 0;
+    padding: 0.5em 0;
+}
+.detail>p>span{
+    color: rgb(170, 170, 211);
+}
+.detail{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}

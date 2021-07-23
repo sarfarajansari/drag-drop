@@ -1,0 +1,22 @@
+.flex-container> h3{
+    padding: 0.1em 0.2em;
+    margin: 0 0 0.1em 0;
+    color: rgb(109, 106, 106);
+}
+.flex-container>div{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-container.no-padding>h3{
+    padding-left: calc(0.1em + 10px);
+}
+
+@media screen and (min-width:720px) {
+    .flex-container{
+        padding:0 10px;
+    }  
+    .flex-container.no-padding{
+        padding:0
+    }
+}

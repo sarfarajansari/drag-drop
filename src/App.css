@@ -1,0 +1,26 @@
+.box-element {
+  box-shadow: hsl(0, 0%, 80%) 0 0 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+#App-grid{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: minmax(67px,auto) minmax(calc(90vh - 70px),auto) 1fr;
+  grid-template-areas:
+  "header" "content" "footer";
+}
+header{
+  grid-area: header;
+}
+
+footer{
+  grid-area: footer;
+  height: 20vh;
+}
+
+#content{
+  min-height: 80vh;
+  grid-area: content;
+}
