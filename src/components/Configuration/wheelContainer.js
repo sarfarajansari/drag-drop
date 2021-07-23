@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { RiRecordCircleFill } from "react-icons/ri";
 
 const WheelContainer = (props) => {
-
   return (
-    <div className={"wheel-container-parent" +props.id}>
+    <div className={"wheel-container-parent" + props.id}>
       <div className="wheel-container">
         {props.p.map((d, i) => {
           return (
             <div
+              key={i}
               className={
-                d.value ? d.color+" active div" + String(i + 1) : "div" + String(i + 1)
+                d.value
+                  ? d.color + " active div" + String(i + 1)
+                  : "div" + String(i + 1)
               }
-            >{d.value?i+1:<></>}</div>
+            >
+              {d.value ? i + 1 : <></>}
+            </div>
           );
         })}
       </div>
