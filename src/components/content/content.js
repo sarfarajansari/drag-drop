@@ -23,6 +23,8 @@ const Content = () => {
 
     for (var i = 0; i < dropBoxs.length; i++) {
       let rect = dropBoxs[i].getBoundingClientRect();
+
+    
       if (
         x > rect.x &&
         x < rect.x + rect.width &&
