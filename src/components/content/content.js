@@ -6,9 +6,6 @@ import PoNumbers from "../Po-Numbers/poNumber";
 import Configuration from "../Configuration/Configuration";
 
 
-
-
-
 const Content = () => {
 
   return (

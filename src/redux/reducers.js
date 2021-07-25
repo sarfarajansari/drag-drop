@@ -13,6 +13,8 @@ export const POReducer = (state = POData, action) => {
         return state;
   }
 };
+
+
 export const WheelReducer = (state = WheelData, action) => {
   switch (action.type) {
     case "DROP":
@@ -40,12 +42,6 @@ export const WheelReducer = (state = WheelData, action) => {
           }
         })
       )
-      // return( state[].map((obj)=>{
-      //   if(!obj.value){
-      //     obj.value=true ;
-      //     obj.po=action.payload.num ;
-      //   }
-      // }))
       
     default:
         return state;
