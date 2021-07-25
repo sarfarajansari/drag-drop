@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import Container from "../Helper/container/Container";
 import WheelContainer from "./wheelContainer";
+import {useSelector} from "react-redux"
 import "./config.css";
 
 const Configuration = (props) => {
+  const WheelData =useSelector(state=>state.wheel)
   useEffect(() => {
     let el = document.getElementsByClassName("config-btns-container-parent")[0];
     let el2 = document.getElementsByClassName("content-bottom")[0];
@@ -15,7 +17,7 @@ const Configuration = (props) => {
 
   return (
     <Container title={"Configuration"}>
-      {props.POs.map((p, i) => {
+      {WheelData.map((p, i) => {
         return <WheelContainer id={"wheel" + String(i)} key={i} p={p} />;
       })}
 
